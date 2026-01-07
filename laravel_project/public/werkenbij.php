@@ -38,22 +38,29 @@ echo <<<'HTML'
 </header>
 
 <main>
-  <section id="vacatures" class="about-section">
-  <div class="container">
-    <h2>Open Vacatures</h2>
-    <p style="color: #666; font-size: 16px;">Wij zoeken naar enthousiaste professionals voor de volgende functies:</p>
-    
-    <div class="vacatures-grid">
+  <!-- Hero Section -->
+<section class="hero2">
+  <div class="hero-content2">
+    <h1>Open Vacatures</h1>
+    <p class="lead">Sluit je aan bij ons team!</p>
+    <div class="cta">
+      <a class="btn" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20-%20Werken%20bij%20PMB%20Amsterdam">Solliciteer nu</a>
+      <a class="btn" href="#vacatures">Bekijk vacatures</a>
+    </div>
+  </div>
+  </section>
+
+  <div id="vacatures" class="vacatures-grid">
       <div class="vacancy-card">
         <span class="vacancy-label">FULL-TIME</span>
         <h3>Senior Projectmanager</h3>
         <div class="vacancy-meta">
-          <span>📍 Amsterdam</span>
-          <span>💰 €4.200 - €5.500</span>
+          <span><img src="/img/location.jpg" alt="Locatie" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> Amsterdam</span>
+          <span><img src="/img/euro.jpg" alt="€" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> €4.200 - €5.500</span>
         </div>
         <p>Leid complexe, multi-disciplinaire projecten met budgetten tot €5M. Jij hebt 5+ jaar ervaring en bent klaar voor een leidinggevende rol. Perfekt voor iemand die sterke organisatorische skills combineert met empathie.</p>
         <div style="margin-top: 16px;">
-          <a class="btn" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20Senior%20Projectmanager">Solliciteer</a>
+          <a class="btn-card" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20Senior%20Projectmanager">Solliciteer</a>
         </div>
       </div>
 
@@ -61,12 +68,12 @@ echo <<<'HTML'
         <span class="vacancy-label">FULL-TIME</span>
         <h3>Junior Projectmanager</h3>
         <div class="vacancy-meta">
-          <span>📍 Amsterdam</span>
-          <span>💰 €2.400 - €3.200</span>
+          <span><img src="/img/location.jpg" alt="Locatie" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> Amsterdam</span>
+          <span><img src="/img/euro.jpg" alt="€" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> €2.400 - €3.200</span>
         </div>
         <p>Start je carrière onder begeleiding van senior staff. Je volgt projecten van begin tot einde, ondersteunt in planning en communicatie. Ideaal voor HBO-afgestudeerden met interesse in projectmanagement.</p>
         <div style="margin-top: 16px;">
-          <a class="btn" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20Junior%20Projectmanager">Solliciteer</a>
+          <a class="btn-card" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20Junior%20Projectmanager">Solliciteer</a>
         </div>
       </div>
 
@@ -74,12 +81,12 @@ echo <<<'HTML'
         <span class="vacancy-label">FULL-TIME</span>
         <h3>Planning & Scheduling Specialist</h3>
         <div class="vacancy-meta">
-          <span>📍 Amsterdam</span>
-          <span>💰 €2.800 - €3.800</span>
+          <span><img src="/img/location.jpg" alt="Locatie" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> Amsterdam</span>
+          <span><img src="/img/euro.jpg" alt="€" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> €2.800 - €3.800</span>
         </div>
         <p>Creëer en beheer planning voor grote projecten. Je bent expert in tools als MS Project en Smartsheet. Logisch denken, detailgerichtheid en communicatieve skills zijn essentieel.</p>
         <div style="margin-top: 16px;">
-          <a class="btn" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20Planning%20Specialist">Solliciteer</a>
+          <a class="btn-card" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20Planning%20Specialist">Solliciteer</a>
         </div>
       </div>
 
@@ -87,12 +94,12 @@ echo <<<'HTML'
         <span class="vacancy-label">PART-TIME</span>
         <h3>Junior Planner</h3>
         <div class="vacancy-meta">
-          <span>📍 Amsterdam</span>
-          <span>💰 €2.000 - €2.600</span>
+          <span><img src="/img/location.jpg" alt="Locatie" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> Amsterdam</span>
+          <span><img src="/img/euro.jpg" alt="€" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> €2.000 - €2.600</span>
         </div>
         <p>Perfect voor studerenden of professionals die flexibel werken. Je ondersteunt in planning, data-invoer en rapportage. Minimaal 16 uur per week. Goede gelegenheid om ervaring op te doen.</p>
         <div style="margin-top: 16px;">
-          <a class="btn" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20Junior%20Planner">Solliciteer</a>
+          <a class="btn-card" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20Junior%20Planner">Solliciteer</a>
         </div>
       </div>
 
@@ -100,12 +107,12 @@ echo <<<'HTML'
         <span class="vacancy-label">FULL-TIME</span>
         <h3>Projectmanagement Consultant</h3>
         <div class="vacancy-meta">
-          <span>📍 Amsterdam</span>
-          <span>💰 €3.500 - €4.800</span>
+          <span><img src="/img/location.jpg" alt="Locatie" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> Amsterdam</span>
+          <span><img src="/img/euro.jpg" alt="€" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> €3.500 - €4.800</span>
         </div>
         <p>Adviseer klanten over projectmanagement-methodieken en best practices. Jij bent experienced in Scrum, Waterfall en Hybrid-methoden. Travel naar klanten: 30-40% van je tijd.</p>
         <div style="margin-top: 16px;">
-          <a class="btn" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20PM%20Consultant">Solliciteer</a>
+          <a class="btn-card" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20PM%20Consultant">Solliciteer</a>
         </div>
       </div>
 
@@ -113,18 +120,16 @@ echo <<<'HTML'
         <span class="vacancy-label">FULL-TIME</span>
         <h3>RPA & Automation Specialist</h3>
         <div class="vacancy-meta">
-          <span>📍 Amsterdam</span>
-          <span>💰 €3.200 - €4.400</span>
+          <span><img src="/img/location.jpg" alt="Locatie" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> Amsterdam</span>
+          <span><img src="/img/euro.jpg" alt="€" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> €3.200 - €4.400</span>
         </div>
         <p>Optimaliseer projectmanagement-processen via automatisering. Jij hebt ervaring met RPA-tools, Power Automate en process mining. Je helpt teams efficiënter te werken.</p>
         <div style="margin-top: 16px;">
-          <a class="btn" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20RPA%20Specialist">Solliciteer</a>
+          <a class="btn-card" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20RPA%20Specialist">Solliciteer</a>
         </div>
       </div>
     </div>
   </div>
-</section>
-  </section>
 
   <!-- Contact Section -->
 <section id="contact">
@@ -156,6 +161,20 @@ echo <<<'HTML'
   </div>
 </footer>
 
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('a[href="#vacatures"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var el = document.getElementById('vacatures');
+      if (!el) return;
+      var y = el.getBoundingClientRect().top + window.pageYOffset - 200;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    });
+  });
+});
+</script>
 </body>
 </html>
 HTML;

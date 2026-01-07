@@ -41,7 +41,8 @@ header .brand-logo {
 }
 
 .nav-topics:hover {
-  color:#ff9a9a;
+  color:red;
+  text-decoration: none;
 }
 
   .nav-topics {
@@ -99,21 +100,22 @@ section {
   padding: 100px 0;
 }
 
-.hero {
+.hero1 {
   background: linear-gradient(135deg, var(--red) 0%, #a00824 100%);
   color: var(--white);
-  padding: 150px 20px !important;
+  padding: 150px 10px !important;
   text-align: center;
 }
 
-.hero-content {
+.hero-content1 {
   max-width: 720px;
+  max-height:200px;
   margin: 0 auto;
 }
 
-h1 {
-  margin: 0 0 32px;
-  font-size: 64px;
+.hero-title {
+  margin: 0 0 30px;
+  font-size: 55px;
   font-weight: 700;
   letter-spacing: -0.5px;
   line-height: 1.2;
@@ -121,7 +123,7 @@ h1 {
 
 h2 {
   margin: 0 0 40px;
-  font-size: 48px;
+  font-size: 30px;
   color: var(--dark);
   font-weight: 700;
 }
@@ -169,14 +171,22 @@ p.lead {
 }
 
 .btn-secondary {
-  background: transparent;
-  color: var(--white);
-  border: 2px solid var(--white);
+  background: white;
+  color: var(--red);
+  padding: 14px 28px;
+  border-radius: 6px;
+  border: 0;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+  font-size: 15px;
 }
 
 .btn-secondary:hover {
-  background: var(--white);
-  color: var(--red);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .cards {
@@ -299,6 +309,20 @@ footer a:hover {
   margin: 40px 0;
 }
 
+/* Reduce font-size for the "onderdeel van pmb amsterdam" line (covers common selectors) */
+.hero .subtext,
+.hero .subtitle,
+.hero small,
+.hero .lead .subtext,
+.hero .lead small {
+  font-size: clamp(12px, 1.2vw, 14px);
+  line-height: 1.2;
+  opacity: 0.95;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Mobile refinement */
 @media (max-width: 768px) {
   h1 {
     font-size: 36px;
@@ -330,5 +354,13 @@ footer a:hover {
   .vacancy-meta {
     flex-direction: column;
     gap: 8px;
+  }
+
+  .hero .subtext,
+  .hero .subtitle,
+  .hero small,
+  .hero .lead .subtext,
+  .hero .lead small {
+    font-size: 11px;
   }
 }
