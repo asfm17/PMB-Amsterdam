@@ -92,32 +92,6 @@ if ($uri === '/' || $uri === '/index.php') {
   </div>
 </section>
 
-<!-- Galerie / lege canvassen -->
-<section class="section">
-  <div class="container">
-    <h2>Visueel — plaats later je foto's</h2>
-    <p>Hieronder staan enkele lege canvassen die je later kunt vullen met foto’s of visuals van projecten, teams of resultaten.</p>
-    <div class="cards">
-      <div><canvas class="photo-canvas" id="photo1" width="640" height="400"></canvas></div>
-      <div><canvas class="photo-canvas" id="photo2" width="640" height="400"></canvas></div>
-      <div><canvas class="photo-canvas" id="photo3" width="640" height="400"></canvas></div>
-    </div>
-  </div>
-</section>
-
-<!-- Over het team -->
-<section class="section" style="background:#f7f7f9">
-  <div class="container">
-    <h2>Ons team</h2>
-    <p>Een compact team van ervaren projectmanagers, planners en processpecialisten. We combineren scherpe inhoudelijke kennis met pragmatische uitvoering.</p>
-    <div class="cards">
-      <div class="card"><h4>Teamlead — Sarah</h4><p>20+ jaar ervaring in infrastructuurprojecten.</p></div>
-      <div class="card"><h4>Senior PM — Jeroen</h4><p>Expert in planning en contractmanagement.</p></div>
-      <div class="card"><h4>Consultant — Aisha</h4><p>Specialist in change management en adoptie.</p></div>
-    </div>
-  </div>
-</section>
-
 <!-- Call to action -->
 <section class="section">
   <div class="container" style="text-align:center">

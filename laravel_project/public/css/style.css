@@ -75,7 +75,7 @@ header .brand-logo {
 
 header nav {
   display: flex;
-  gap: 24px;
+  gap: 23px;
   font-weight: 500;
   font-size: 14px;
 }
