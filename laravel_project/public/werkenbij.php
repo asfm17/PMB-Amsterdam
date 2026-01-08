@@ -138,17 +138,17 @@ echo <<<'HTML'
     <p style="color: #666; font-size: 18px; max-width: 600px; margin: 20px auto;">Stuur ons je CV en motivatiebrief. Wij kijken ernaar uit om je te leren kennen!</p>
     
     <div class="cta" style="justify-content: center;">
-      <a class="btn" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20-%20Werken%20bij%20PMB%20Amsterdam">📧 Solliciteer nu</a>
-      <a class="btn btn-secondary" href="tel:+31203030303">☎️ Bel ons: +31 (0)20 303 0303</a>
+      <a class="btn" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20-%20Werken%20bij%20PMB%20Amsterdam"><img src="/img/mail.jpg" alt="Mail" style="height:20px;margin-right:8px;vertical-align:middle;"> Solliciteer nu</a>
+      <a class="btn btn-secondary" href="tel:+31203030303"><img src="/img/call.jpg" alt="Call" style="height:20px;margin-right:8px;vertical-align:middle;"> Bel ons: +31 (0)20 303 0303</a>
     </div>
 
     <div style="margin-top: 40px; padding: 20px; background: var(--light-gray); border-radius: 10px;">
       <p style="margin: 0 0 12px;"><strong>PMB Amsterdam</strong></p>
       <p style="margin: 0; color: #666;">
-        Weesperstraat 432 | 1018 DN Amsterdam<br>
-        📧 hr@pmb-amsterdam.nl<br>
-        ☎️ +31 (0)20 303 0303<br>
-        🌐 www.pmb-amsterdam.nl
+        <img src="/img/location.jpg" alt="Location" style="height:20px;margin-right:8px;vertical-align:middle;"> Weesperstraat 432 | 1018 DN Amsterdam<br>
+        <img src="/img/mail.jpg" alt="Mail" style="height:20px;margin-right:8px;vertical-align:middle;"> hr@pmb-amsterdam.nl<br>
+        <img src="/img/call.jpg" alt="Call" style="height:20px;margin-right:8px;vertical-align:middle;"> +31 (0)20 303 0303<br>
+        <img src="/img/red.jpg" alt="Web" style="height:20px;margin-right:8px;vertical-align:middle;"> www.pmb-amsterdam.nl
       </p>
     </div>
   </div>

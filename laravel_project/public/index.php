@@ -60,7 +60,7 @@ if ($uri === '/' || $uri === '/index.php') {
 <!-- Wat we doen -->
 <section class="section">
   <div class="container">
-    <h2>Wat we doen</h2>
+    <h2>Over ons</h2>
     <p>PMB Amsterdam is een gespecialiseerd projectmanagementbureau. We bieden advies en uitvoering voor alle fases van het project: van initiatie en planvorming tot uitvoering en afronding. Onze kernactiviteiten:</p>
     <div class="cards">
       <div class="card">
@@ -79,6 +79,14 @@ if ($uri === '/' || $uri === '/index.php') {
   </div>
 </section>
 
+<!-- Insert two photos side-by-side between sections -->
+<section class="section" style="padding:24px 16px; background:transparent">
+  <div class="container" style="display:flex;gap:20px;align-items:center;justify-content:center;flex-wrap:wrap">
+    <img src="/img/bureau.jpg" alt="Bureau" style="flex:1 1 420px;max-width:520px;width:100%;height:auto;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,0.08);">
+    <img src="/img/projectmanagement_bureau_cover.jpg" alt="Project Management Bureau" style="flex:1 1 420px;max-width:520px;width:100%;height:auto;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,0.08);">
+  </div>
+</section>
+
 <!-- Projects / Impact -->
 <section class="section" style="background:#fbfbfb">
   <div class="container">
@@ -92,12 +100,25 @@ if ($uri === '/' || $uri === '/index.php') {
   </div>
 </section>
 
-<!-- Call to action -->
-<section class="section">
-  <div class="container" style="text-align:center">
-    <h2>Klaar om samen te werken?</h2>
-    <p>Neem contact op voor een kennismaking. We bekijken samen welke aanpak het beste bij uw vraag past.</p>
-    <a class="btn" href="mailto:hr@pmb-amsterdam.nl?subject=Interesse%20PMB%20Amsterdam">Contact opnemen</a>
+<section id="contact">
+  <div class="container" style="text-align: center;">
+    <h2>Klaar om mee te doen?</h2>
+    <p style="color: #666; font-size: 18px; max-width: 600px; margin: 20px auto;">Stuur ons je CV en motivatiebrief. Wij kijken ernaar uit om je te leren kennen!</p>
+    
+    <div class="cta" style="justify-content: center;">
+      <a class="btn" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20-%20Werken%20bij%20PMB%20Amsterdam"><img src="/img/mail.jpg" alt="Mail" style="height:20px;margin-right:8px;vertical-align:middle;"> Solliciteer nu</a>
+      <a class="btn" href="tel:+31203030303"><img src="/img/call.jpg" alt="Call" style="height:20px;margin-right:8px;vertical-align:middle;"> Bel ons: +31 (0)20 303 0303</a>
+    </div>
+
+    <div style="margin-top: 40px; padding: 20px; background: var(--light-gray); border-radius: 10px;">
+      <p style="margin: 0 0 12px;"><strong>PMB Amsterdam</strong></p>
+      <p style="margin: 0; color: #666;">
+        <img src="/img/location.jpg" alt="Location" style="height:20px;margin-right:8px;vertical-align:middle;"> Weesperstraat 432 | 1018 DN Amsterdam<br>
+        <img src="/img/mail.jpg" alt="Mail" style="height:20px;margin-right:8px;vertical-align:middle;"> hr@pmb-amsterdam.nl<br>
+        <img src="/img/call.jpg" alt="Call" style="height:20px;margin-right:8px;vertical-align:middle;"> +31 (0)20 303 0303<br>
+        <img src="/img/red.jpg" alt="Call" style="height:20px;margin-right:8px;vertical-align:middle;"> www.pmb-amsterdam.nl
+      </p>
+    </div>
   </div>
 </section>
 

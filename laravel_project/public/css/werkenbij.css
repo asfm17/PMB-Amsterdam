@@ -10,7 +10,13 @@ section {
 }
 
 .hero2 {
-  background: linear-gradient(135deg, var(--red) 0%, #a00824 100%);
+  background: linear-gradient(135deg,
+    #ff6b6b 0%,
+    #ff3b3b 20%,
+    var(--red) 45%,
+    #a00824 72%,
+    #6b0012 100%
+  );
   color: var(--white);
   padding: 150px 20px !important;
   text-align: center;
@@ -30,6 +36,10 @@ h1 {
   line-height: 1.2;
 }
 
+h1:hover {
+  cursor:default;
+}
+
 h2 {
   margin: 0 0 40px;
   font-size: 48px;
@@ -37,11 +47,19 @@ h2 {
   font-weight: 700;
 }
 
+h2:hover {
+  cursor:default;
+}
+
 h3 {
   margin: 0 0 24px;
   font-size: 24px;
   font-weight: 600;
   color: var(--dark);
+}
+
+h3:hover {
+  cursor:default;
 }
 
 p.lead {
@@ -75,8 +93,9 @@ p.lead {
 }
 
 .btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-10px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-decoration: none;
 }
 
 .btn-secondary {
@@ -119,7 +138,7 @@ p.lead {
   padding: 28px;
   border-radius: 14px;
   transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
-  box-shadow: 0 18px 50px rgba(183,13,40,0.18);
+  box-shadow: 20px 30px 200px rgba(0, 0, 0, 0.18);
 }
 
 .vacancy-card:hover {

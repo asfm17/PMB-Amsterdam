@@ -33,7 +33,7 @@ header .brand-logo {
 }
 
 .nav-topics {
-  color:red;
+  color:black;
   text-decoration: none;
   font-weight: 600;
   margin-left: 200px;
@@ -41,7 +41,7 @@ header .brand-logo {
 }
 
 .nav-topics:hover {
-  color:red;
+  color:black;
   text-decoration: none;
 }
 
@@ -101,7 +101,13 @@ section {
 }
 
 .hero1 {
-  background: linear-gradient(135deg, var(--red) 0%, #a00824 100%);
+  background: linear-gradient(135deg,
+    #ff6b6b 0%,
+    #ff3b3b 20%,
+    var(--red) 45%,
+    #a00824 72%,
+    #6b0012 100%
+  );
   color: var(--white);
   padding: 150px 10px !important;
   text-align: center;
@@ -141,6 +147,10 @@ p.lead {
   margin: 0 0 48px;
   line-height: 1.8;
   font-weight: 500;
+}
+
+p:hover {
+  cursor:default;
 }
 
 .cta {
@@ -302,6 +312,29 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+.btn {
+  background: var(--red);
+  color: var(--white);
+  padding: 12px 28px;
+  margin-top:20px;
+  border-radius: 6px;
+  border: 0;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+  font-size: 15px;
+}
+
+.contact-btn:hover {
+  transform: translateY(-5px);
+  background: #b00720;
+  color:white;
+  text-decoration: none;
+}
+
 
 .divider {
   height: 1px;
