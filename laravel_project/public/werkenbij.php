@@ -44,7 +44,7 @@ echo <<<'HTML'
     <h1>Open Vacatures</h1>
     <p class="lead">Sluit je aan bij ons team!</p>
     <div class="cta">
-      <a class="btn" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20-%20Werken%20bij%20PMB%20Amsterdam">Solliciteer nu</a>
+      <a class="btn" href="/contact.php?apply=1">Solliciteer nu</a>
       <a class="btn" href="#vacatures">Bekijk vacatures</a>
     </div>
   </div>
@@ -60,7 +60,7 @@ echo <<<'HTML'
         </div>
         <p>Leid complexe, multi-disciplinaire projecten met budgetten tot €5M. Jij hebt 5+ jaar ervaring en bent klaar voor een leidinggevende rol. Perfekt voor iemand die sterke organisatorische skills combineert met empathie.</p>
         <div style="margin-top: 16px;">
-          <a class="btn-card" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20Senior%20Projectmanager">Solliciteer</a>
+          <a class="btn-card" href="/contact.php?apply=1&job=Senior%20Projectmanager">Solliciteer</a>
         </div>
       </div>
 
@@ -73,7 +73,7 @@ echo <<<'HTML'
         </div>
         <p>Start je carrière onder begeleiding van senior staff. Je volgt projecten van begin tot einde, ondersteunt in planning en communicatie. Ideaal voor HBO-afgestudeerden met interesse in projectmanagement.</p>
         <div style="margin-top: 16px;">
-          <a class="btn-card" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20Junior%20Projectmanager">Solliciteer</a>
+          <a class="btn-card" href="/contact.php?apply=1&job=Junior%20Projectmanager">Solliciteer</a>
         </div>
       </div>
 
@@ -86,7 +86,7 @@ echo <<<'HTML'
         </div>
         <p>Creëer en beheer planning voor grote projecten. Je bent expert in tools als MS Project en Smartsheet. Logisch denken, detailgerichtheid en communicatieve skills zijn essentieel.</p>
         <div style="margin-top: 16px;">
-          <a class="btn-card" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20Planning%20Specialist">Solliciteer</a>
+          <a class="btn-card" href="/contact.php?apply=1&job=Planning%20%26%20Scheduling%20Specialist">Solliciteer</a>
         </div>
       </div>
 
@@ -99,7 +99,7 @@ echo <<<'HTML'
         </div>
         <p>Perfect voor studerenden of professionals die flexibel werken. Je ondersteunt in planning, data-invoer en rapportage. Minimaal 16 uur per week. Goede gelegenheid om ervaring op te doen.</p>
         <div style="margin-top: 16px;">
-          <a class="btn-card" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20Junior%20Planner">Solliciteer</a>
+          <a class="btn-card" href="/contact.php?apply=1&job=Junior%20Planner">Solliciteer</a>
         </div>
       </div>
 
@@ -112,7 +112,7 @@ echo <<<'HTML'
         </div>
         <p>Adviseer klanten over projectmanagement-methodieken en best practices. Jij bent experienced in Scrum, Waterfall en Hybrid-methoden. Travel naar klanten: 30-40% van je tijd.</p>
         <div style="margin-top: 16px;">
-          <a class="btn-card" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20PM%20Consultant">Solliciteer</a>
+          <a class="btn-card" href="/contact.php?apply=1&job=Projectmanagement%20Consultant">Solliciteer</a>
         </div>
       </div>
 
@@ -125,7 +125,7 @@ echo <<<'HTML'
         </div>
         <p>Optimaliseer projectmanagement-processen via automatisering. Jij hebt ervaring met RPA-tools, Power Automate en process mining. Je helpt teams efficiënter te werken.</p>
         <div style="margin-top: 16px;">
-          <a class="btn-card" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20RPA%20Specialist">Solliciteer</a>
+          <a class="btn-card" href="/contact.php?apply=1&job=RPA%20%26%20Automation%20Specialist">Solliciteer</a>
         </div>
       </div>
     </div>
@@ -138,8 +138,8 @@ echo <<<'HTML'
     <p style="color: #666; font-size: 18px; max-width: 600px; margin: 20px auto;">Stuur ons je CV en motivatiebrief. Wij kijken ernaar uit om je te leren kennen!</p>
     
     <div class="cta" style="justify-content: center;">
-      <a class="btn" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20-%20Werken%20bij%20PMB%20Amsterdam"><img src="/img/mail.jpg" alt="Mail" style="height:20px;margin-right:8px;vertical-align:middle;"> Solliciteer nu</a>
-      <a class="btn btn-secondary" href="tel:+31203030303"><img src="/img/call.jpg" alt="Call" style="height:20px;margin-right:8px;vertical-align:middle;"> Bel ons: +31 (0)20 303 0303</a>
+      <a class="btn" href="/contact.php?apply=1"><img src="/img/mail.jpg" alt="Mail" style="height:20px;margin-right:8px;vertical-align:middle;"> Solliciteer nu</a>
+      <a class="btn" href="tel:+31203030303"><img src="/img/call.jpg" alt="Call" style="height:20px;margin-right:8px;vertical-align:middle;"> Bel ons: +31 (0)20 303 0303</a>
     </div>
 
     <div style="margin-top: 40px; padding: 20px; background: var(--light-gray); border-radius: 10px;">
@@ -148,7 +148,7 @@ echo <<<'HTML'
         <img src="/img/location.jpg" alt="Location" style="height:20px;margin-right:8px;vertical-align:middle;"> Weesperstraat 432 | 1018 DN Amsterdam<br>
         <img src="/img/mail.jpg" alt="Mail" style="height:20px;margin-right:8px;vertical-align:middle;"> hr@pmb-amsterdam.nl<br>
         <img src="/img/call.jpg" alt="Call" style="height:20px;margin-right:8px;vertical-align:middle;"> +31 (0)20 303 0303<br>
-        <img src="/img/red.jpg" alt="Web" style="height:20px;margin-right:8px;vertical-align:middle;"> www.pmb-amsterdam.nl
+        <img src="/img/red.jpg" alt="Call" style="height:20px;margin-right:8px;vertical-align:middle;"> www.pmb-amsterdam.nl
       </p>
     </div>
   </div>

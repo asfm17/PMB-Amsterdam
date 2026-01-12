@@ -81,9 +81,9 @@ if ($uri === '/' || $uri === '/index.php') {
 
 <!-- Insert two photos side-by-side between sections -->
 <section class="section" style="padding:24px 16px; background:transparent">
-  <div class="container" style="display:flex;gap:20px;align-items:center;justify-content:center;flex-wrap:wrap">
-    <img src="/img/bureau.jpg" alt="Bureau" style="flex:1 1 420px;max-width:520px;width:100%;height:auto;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,0.08);">
-    <img src="/img/projectmanagement_bureau_cover.jpg" alt="Project Management Bureau" style="flex:1 1 420px;max-width:520px;width:100%;height:auto;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,0.08);">
+  <div class="container photo-gallery">
+    <img src="/img/bureau.jpg" alt="Bureau">
+    <img src="/img/projectmanagement_bureau_cover.jpg" alt="Project Management Bureau">
   </div>
 </section>
 
@@ -106,7 +106,7 @@ if ($uri === '/' || $uri === '/index.php') {
     <p style="color: #666; font-size: 18px; max-width: 600px; margin: 20px auto;">Stuur ons je CV en motivatiebrief. Wij kijken ernaar uit om je te leren kennen!</p>
     
     <div class="cta" style="justify-content: center;">
-      <a class="btn" href="mailto:hr@pmb-amsterdam.nl?subject=Sollicitatie%20-%20Werken%20bij%20PMB%20Amsterdam"><img src="/img/mail.jpg" alt="Mail" style="height:20px;margin-right:8px;vertical-align:middle;"> Solliciteer nu</a>
+      <a class="btn" href="/contact.php?apply=1"><img src="/img/mail.jpg" alt="Mail" style="height:20px;margin-right:8px;vertical-align:middle;"> Solliciteer nu</a>
       <a class="btn" href="tel:+31203030303"><img src="/img/call.jpg" alt="Call" style="height:20px;margin-right:8px;vertical-align:middle;"> Bel ons: +31 (0)20 303 0303</a>
     </div>
 
