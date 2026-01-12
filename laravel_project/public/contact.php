@@ -38,11 +38,6 @@ echo <<<'HTML'
 </header>
 
 <main>
-  <!-- Hero Section -->
-  <section class="contact-hero">
-    <h1>Laten we samen iets bereiken</h1>
-    <p>Neem contact met ons op en ontdek hoe PMB Amsterdam jouw project naar het volgende niveau kan tillen.</p>
-  </section>
 
   <section class="container contact-section">
     <h1>Contact</h1>
@@ -69,6 +64,8 @@ echo <<<'HTML'
 
         <p style="margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--border-gray); font-size: 14px; color: #666;">
           <strong>Bereikbaar:</strong> Ma - Vr van 09:00 tot 17:00
+          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2436.423995380947!2d4.9067104!3d52.3627315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTLCsDIxJzQ1LjgiTiA0wrA1NCcyNC4yIkU!5e0!3m2!1snl!2snl!4v1768231984239!5m2!1snl!2snl" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </p>
       </div>
 

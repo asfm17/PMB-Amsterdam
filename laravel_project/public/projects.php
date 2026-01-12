@@ -34,7 +34,7 @@
 <section class="projects-hero">
     <div class="projects-hero-content">
         <h1>Onze projecten</h1>
-        <p>PMB Amsterdam werkt aan impactvolle projecten voor de stad, haar inwoners en organisaties.</p>
+        <p>PMB Amsterdam werkt aan impactvolle projecten voor de stad.</p>
     </div>
 </section>
 

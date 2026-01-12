@@ -104,23 +104,34 @@
             </section>
 
             <section id="contact" style="margin-top:2rem">
+                @if (session('success'))
+    <div class="card" style="border-left:4px solid #2e7d32;">
+        {{ session('success') }}
+    </div>
+@endif
                 <h2>Interesse? Neem contact op</h2>
-                <div class="grid">
-                    <form class="card" method="POST" action="#">
-                        @csrf
-                        <label>Naam<br><input type="text" name="name" required style="width:100%;padding:.5rem;margin-top:.25rem"></label>
-                        <label style="display:block;margin-top:.5rem">E-mail<br><input type="email" name="email" required style="width:100%;padding:.5rem;margin-top:.25rem"></label>
-                        <label style="display:block;margin-top:.5rem">Bericht / Motivatie<br><textarea name="message" rows="4" style="width:100%;padding:.5rem;margin-top:.25rem"></textarea></label>
-                        <p style="margin-top:.75rem"><button class="btn" type="submit">Verstuur</button></p>
-                    </form>
-                    <div class="card">
-                        <h4>Contactgegevens</h4>
-                        <p>PMB Amsterdam<br>info@pmb-amsterdam.nl<br>+31 20 000 0000</p>
-                        <p>Of stuur direct je CV via e-mail met onderwerp "Sollicitatie".</p>
-                    </div>
-                </div>
+                <form class="card" method="POST" action="/contact">
+    @csrf
+
+    <label>
+        Naam<br>
+        <input type="text" name="name" required>
+    </label>
+
+    <label>
+        E-mail<br>
+        <input type="email" name="email" required>
+    </label>
+
+    <label>
+        Bericht<br>
+        <textarea name="message"></textarea>
+    </label>
+
+    <button type="submit">Verstuur</button>
+</form>
             </section>
-        </div>
+        </div>  
     </main>
 
     <footer>
