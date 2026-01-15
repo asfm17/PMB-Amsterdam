@@ -84,7 +84,7 @@ if ($uri === '/' || $uri === '/index.php') {
   <div class="container photo-gallery">
     <img src="/img/bureau.jpg" alt="Bureau">
     <img src="/img/projectmanagement_bureau_cover.jpg" alt="Project Management Bureau">
-  </div>
+  </div> 
 </section>
 
 <!-- Projects / Impact -->
