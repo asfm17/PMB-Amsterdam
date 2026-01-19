@@ -22,3 +22,14 @@ Route::get('admin', function () {
 
 
     //    echo "bind routes";
+
+    use App\Http\Controllers\Admin\VacancyAdminController;
+
+Route::prefix('admin')->group(function () {
+    Route::resource('vacancies', VacancyAdminController::class)->except(['show']);
+});
+
+use App\Http\Controllers\Admin\ContactMessageAdminController;
+
+Route::get('/admin/contact-messages', [ContactMessageAdminController::class, 'index']);
+use App\Http\Controllers\Admin\AdminController;
