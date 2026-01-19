@@ -1,30 +1,24 @@
 <?php
 
+
+  
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ContactController;
-use App\Http\Controllers\Admin\ContactMessageAdminController;
+ use App\Http\Controllers\HomeController;
+ Route::get('/', [HomeController::class, 'index'])->name("home.index");
 
-/*
-|--------------------------------------------------------------------------
-| Publiek
-|--------------------------------------------------------------------------
-*/
 
-Route::get('/', function () {
-    return view('home');
+// Route::get('/home', function () {
+//     return view('home');
+//     // return response('ADMIN WORKS (LARAVEL)', 200)
+//     //     ->header('Content-Type', 'text/plain');
+// });
+
+
+Route::get('admin', function () {
+    return view('admin');
+    // return response('ADMIN WORKS (LARAVEL)', 200)
+    //     ->header('Content-Type', 'text/plain');
 });
 
-Route::post('/contact', [ContactController::class, 'store'])
-    ->name('contact.store');
 
-/*
-|--------------------------------------------------------------------------
-| Admin
-|--------------------------------------------------------------------------
-*/
-
-Route::prefix('admin')->group(function () {
-    Route::get('/contact-messages', [ContactMessageAdminController::class, 'index']);
-    Route::get('/contact-messages/{contactMessage}', [ContactMessageAdminController::class, 'show']);
-    Route::delete('/contact-messages/{contactMessage}', [ContactMessageAdminController::class, 'destroy']);
-});
+    //    echo "bind routes";
