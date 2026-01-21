@@ -29,10 +29,12 @@ echo <<<'HTML'
     <img class="brand-logo" src="/img/logo-gemeente-amsterdam.jpg" alt="Gemeente Amsterdam Logo">
     <nav>
       <a class="nav-topics" href="/">Home</a>
-      <a class="nav-topics" href="/werkenbij.php">Werken Bij</a>
-      <a class="nav-topics" href="/contact.php">Contact</a>
-      <a class="nav-topics" href="/projects.php">Opdrachten/Projecten</a>
-      <a class="nav-topics" href="/expertise.php">Expertise</a>
+            <a class="nav-topics" href="/werkenbij.php">Werken</a>
+            <a class="nav-topics" href="/contact.php">Contact</a>
+            <a class="nav-topics active" href="/projects.php">Opdrachten/Projecten</a>
+            <a class="nav-topics" href="/expertise.php">Expertise</a>
+            <a class="nav-topics" href="/projectmanagement.php">Projectmanagement</a>
+            <a class="nav-topics" href="/publicaties.php">Publicaties</a>
     </nav>
   </div>
 </header>

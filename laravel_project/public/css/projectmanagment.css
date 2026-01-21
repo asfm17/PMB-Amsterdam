@@ -1,0 +1,240 @@
+/* projectmanagement.css */
+
+.nav-topics.nav-active{
+  color: var(--red);
+}
+
+/* HERO */
+.pm-hero{
+  background: linear-gradient(135deg, #c40000, #e60000);
+  color: var(--white);
+  padding: 70px 16px;
+  text-align: center;
+}
+
+.pm-hero-inner{
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.pm-hero h1{
+  margin: 0 0 12px;
+  font-size: 40px;
+}
+
+.pm-hero p{
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+.pm-actions{
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Outline button for hero (white border) */
+.btn.btn-outline{
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.9);
+  color: #fff;
+}
+
+.btn.btn-outline:hover{
+  border-color: #fff;
+  transform: translateY(-1px);
+}
+
+/* Sections */
+.pm-section{
+  padding: 56px 0;
+}
+
+.pm-alt{
+  background: var(--light-gray);
+}
+
+.pm-cta{
+  background: #fff;
+}
+
+.muted{
+  color: #666;
+}
+
+/* Two column intro */
+.pm-two-col{
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.pm-box{
+  background: #fff;
+  border: 1px solid var(--border-gray);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.pm-list{
+  margin: 14px 0 0;
+  padding-left: 18px;
+  line-height: 1.9;
+}
+
+.pm-tags{
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pm-tag{
+  border: 1px solid var(--border-gray);
+  background: var(--light-gray);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+/* Cards */
+.pm-cards{
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.pm-card{
+  background: #fff;
+  border: 1px solid var(--border-gray);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.pm-card h3{
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.pm-card p{
+  margin: 0;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Steps */
+.pm-steps{
+  margin-top: 16px;
+  display: grid;
+  gap: 14px;
+}
+
+.pm-step{
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 12px;
+  align-items: start;
+  background: #fff;
+  border: 1px solid var(--border-gray);
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.pm-step-nr{
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  border: 1px solid var(--border-gray);
+  background: #f3f3f3;
+}
+
+.pm-step h3{
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.pm-step p{
+  margin: 0;
+  color: #333;
+  line-height: 1.7;
+}
+
+.pm-divider{
+  height: 1px;
+  background: var(--border-gray);
+  margin: 28px 0;
+}
+
+/* KPIs row */
+.pm-kpis{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.pm-kpi{
+  background: var(--light-gray);
+  border: 1px solid var(--border-gray);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.pm-kpi strong{
+  display:block;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.pm-kpi p{
+  margin: 0;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* CTA alignment */
+.pm-cta-inner{
+  text-align: center;
+}
+
+.pm-actions-center{
+  justify-content: center;
+}
+
+.btn.btn-outline-dark{
+  background: transparent;
+  border: 2px solid var(--border-gray);
+  color: var(--dark);
+}
+
+.btn.btn-outline-dark:hover{
+  border-color: var(--dark);
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .pm-two-col{
+    grid-template-columns: 1fr;
+  }
+
+  .pm-cards{
+    grid-template-columns: 1fr;
+  }
+
+  .pm-kpis{
+    grid-template-columns: 1fr;
+  }
+
+  .pm-hero h1{
+    font-size: 32px;
+  }
+}

@@ -9,98 +9,117 @@ section {
   padding: 100px 0;
 }
 
-.expertise-hero-content {
-  background: linear-gradient(135deg, #c40000, #e60000);
+header {
+  background: var(--white);
   color: var(--white);
-  padding: 200px 20px !important;
-  text-align: center;
+  padding: 16px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.hero-content2 {
-  max-width: 720px;
-  max-height:150px;
+header .header-content {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-h1 {
-  margin: 0 0 20px;
-  font-size: 80px;
+header .brand-logo {
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.nav-topics {
+  color: black;
+  text-decoration: none;
+  font-weight: 600; 
+  word-spacing: 30px;
+  transition: color 0.3s;
+}
+
+.nav-topics:hover {
+  color:black;
+  text-decoration: none;
+}
+
+  .nav-topics {
+    position: relative;
+    text-decoration: none;
+    color: red;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-topics::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-topics:hover::after {
+    width: 100%;
+  }
+  
+
+.brand {
   font-weight: 700;
-  letter-spacing: -0.5px;
-  line-height: 1.2;
+  font-size: 20px;
+  letter-spacing: 0.5px;
 }
 
-h1:hover {
-  cursor:default;
-}
-
-h2 {
-  margin: 0 0 40px;
-  font-size: 48px;
-  color: var(--dark);
-  font-weight: 700;
-}
-
-h2:hover {
-  cursor:default;
-}
-
-h3 {
-  margin: 0 0 24px;
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--dark);
-}
-
-h3:hover {
-  cursor:default;
-}
-
-p.lead {
-  font-size: 24px;
-  color: rgba(255,255,255,0.95);
-  margin: 0 0 48px;
-  line-height: 1.8;
-  font-weight: 500;
-}
-
-.cta {
+header nav {
   display: flex;
-  gap: 12px;
-  justify-content: center;
+  gap: 16px;
+  font-weight: 500;
+  font-size: 15px;
   flex-wrap: wrap;
-  margin-top: 32px;
+}
+
+header nav a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: var(--white);
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.werken-hero {
+  background: linear-gradient(135deg, #c40000, #e60000);
+  color: var(--white);
+  padding: 50px 10px !important;
+  text-align: center;
 }
 
 .btn {
-  background: var(--white);
-  color: var(--red);
-  padding: 14px 28px;
-  border-radius: 6px;
+  background: #ff0000;
+  color: var(--white);
+  padding: 12px 24px;
+  border-radius: 8px;
   border: 0;
-  font-weight: 700;
+  font-weight: 600;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  transition: all 0.3s;
+  transition: background 0.3s;
   font-size: 15px;
-}
-
-.btn:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  text-decoration: none;
-}
-
-.btn-secondary {
-  background: transparent;
-  color: var(--white);
-  border: 2px solid var(--white);
-}
-
-.btn-secondary:hover {
-  background: var(--white);
-  color: var(--red);
 }
 
 .vacatures-grid {

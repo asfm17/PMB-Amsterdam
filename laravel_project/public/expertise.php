@@ -5,7 +5,7 @@
 <html lang="nl">
 <head>
   <meta charset="utf-8">
-  <title>PMB Amsterdam — Expertise</title>
+  <title>Expertise — PMB Amsterdam</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="/css/style.css">
@@ -19,10 +19,12 @@
     <img class="brand-logo" src="/img/logo-gemeente-amsterdam.jpg" alt="Gemeente Amsterdam Logo">
     <nav>
       <a class="nav-topics" href="/">Home</a>
-      <a class="nav-topics" href="/werkenbij.php">Werken Bij</a>
-      <a class="nav-topics" href="/contact.php">Contact</a>
-      <a class="nav-topics" href="/projects.php">Opdrachten/Projecten</a>
-      <a class="nav-topics nav-active" href="/expertise.php">Expertise</a>
+            <a class="nav-topics" href="/werkenbij.php">Werken</a>
+            <a class="nav-topics" href="/contact.php">Contact</a>
+            <a class="nav-topics active" href="/projects.php">Opdrachten/Projecten</a>
+            <a class="nav-topics" href="/expertise.php">Expertise</a>
+            <a class="nav-topics" href="/projectmanagement.php">Projectmanagement</a>
+            <a class="nav-topics" href="/publicaties.php">Publicaties</a> 
     </nav>
   </div>
 </header>

@@ -17,10 +17,6 @@ require __DIR__.'/../vendor/autoload.php';
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
-$app->handleRequest(Request::capture());
-
-exit();
-
 // Serve a lightweight static homepage for the root path to present a red/white modern careers page.
 $uri = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
 if ($uri === '/' || $uri === '/index.php') {
@@ -31,7 +27,7 @@ if ($uri === '/' || $uri === '/index.php') {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PMB Amsterdam — Project Management Bureau</title>
+<title>Home — PMB Amsterdam</title>
 <link rel="stylesheet" href="/css/style.css">
 <style>
   .photo-canvas{border:1px dashed #bbb;background:#f8f8f8;display:block;width:100%;max-width:420px;height:260px;margin:8px 0}
@@ -49,11 +45,11 @@ if ($uri === '/' || $uri === '/index.php') {
     <img class="brand-logo" src="/img/logo-gemeente-amsterdam.jpg" alt="Gemeente Amsterdam Logo">
     <nav>
       <a class="nav-topics" href="/">Home</a>
-      <a class="nav-topics" href="/werkenbij.php">Werken Bij</a>
+      <a class="nav-topics" href="/werkenbij.php">Werken</a>
       <a class="nav-topics" href="/contact.php">Contact</a>
       <a class="nav-topics" href="/projects.php">Opdrachten/Projecten</a>
       <a class="nav-topics" href="/expertise.php">Expertise</a>
-      <a class="nav-topics" href="/projectmanagement.php">Projectmanagment</a>
+      <a class="nav-topics" href="/projectmanagement.php">Projectmanagement</a>
       <a class="nav-topics" href="/publicaties.php">Publicaties</a>
     </nav>
   </div>
@@ -119,8 +115,8 @@ if ($uri === '/' || $uri === '/index.php') {
     <p style="color: #666; font-size: 18px; max-width: 600px; margin: 20px auto;">Stuur ons je CV en motivatiebrief. Wij kijken ernaar uit om je te leren kennen!</p>
     
     <div class="cta" style="justify-content: center;">
-      <a class="btn" href="/contact.php?apply=1"><img src="/img/mail.jpg" alt="Mail" style="height:20px;margin-right:8px;vertical-align:middle;"> Solliciteer nu</a>
-      <a class="btn" href="tel:+31203030303"><img src="/img/call.jpg" alt="Call" style="height:20px;margin-right:8px;vertical-align:middle;"> Bel ons: +31 (0)20 303 0303</a>
+      <a class="btn" href="/contact.php">Solliciteer nu</a>
+      <a class="btn" href="tel:+31203030303"> Bel ons: +31 (0)20 303 0303</a>
     </div>
 
     <div style="margin-top: 40px; padding: 20px; background: var(--light-gray); border-radius: 10px;">

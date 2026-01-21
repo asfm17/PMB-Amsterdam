@@ -32,7 +32,7 @@ header {
 header .header-content {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 100px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -45,7 +45,8 @@ header .brand-logo {
 .nav-topics {
   color: black;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 600; 
+  word-spacing: 30px;
   transition: color 0.3s;
 }
 
@@ -87,7 +88,7 @@ header nav {
   display: flex;
   gap: 16px;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 15px;
   flex-wrap: wrap;
 }
 
@@ -113,7 +114,7 @@ section {
 .hero1 {
   background: linear-gradient(135deg, #c40000, #e60000);
   color: var(--white);
-  padding: 80px 10px !important;
+  padding: 50px 10px !important;
   text-align: center;
 }
 
@@ -219,6 +220,17 @@ a.btn:hover, button.btn:hover, input.btn:hover {
   background: var(--red);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.pub-pill{
+  display: inline-block;
+  background: var(--red);
+  color: var(--white);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 16px;
 }
 
 .cards {
