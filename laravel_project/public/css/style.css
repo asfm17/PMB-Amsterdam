@@ -75,6 +75,7 @@ header .brand-logo {
   .nav-topics:hover::after {
     width: 100%;
   }
+  
 
 .brand {
   font-weight: 700;
@@ -91,7 +92,6 @@ header nav {
 }
 
 header nav a {
-  color: rgba(255,255,255,0.9);
   text-decoration: none;
   transition: color 0.3s;
 }
