@@ -1,13 +1,7 @@
 /* Contact Page Styling */
 
 .contact-hero {
-  background: linear-gradient(135deg,
-    #ff6b6b 0%,
-    #ff3b3b 20%,
-    #df0c2f 45%,
-    #a00824 72%,
-    #6b0012 100%
-  );
+  background: linear-gradient(135deg, #c40000, #e60000);
   color: white;
   padding: 100px 20px;
   text-align: center;

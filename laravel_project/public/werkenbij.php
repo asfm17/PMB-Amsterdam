@@ -1,29 +1,22 @@
 <?php
-
-use Illuminate\Foundation\Application;
-
-define('LARAVEL_START', microtime(true));
-
-// Determine if the application is in maintenance mode...
-if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
-    require $maintenance;
-}
-
-// Serve a lightweight static homepage for the root path to present a red/white modern careers page.
-// Always render this page when visited directly.
-echo <<<'HTML'
+// expertise.php
+?>
 <!doctype html>
 <html lang="nl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Werken bij — PMB Amsterdam</title>
-<link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/werkenbij.css">
+  <meta charset="utf-8">
+  <title>PMB Amsterdam — Expertise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bestaande styles -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Expertise-specifieke CSS -->
+  <link rel="stylesheet" href="/css/expertise.css">
 </head>
+
 <body>
 
-<!-- Header -->
 <header>
   <div class="header-content">
     <img class="brand-logo" src="/img/logo-gemeente-amsterdam.jpg" alt="Gemeente Amsterdam Logo">
@@ -32,150 +25,162 @@ echo <<<'HTML'
       <a class="nav-topics" href="/werkenbij.php">Werken Bij</a>
       <a class="nav-topics" href="/contact.php">Contact</a>
       <a class="nav-topics" href="/projects.php">Opdrachten/Projecten</a>
-      <a class="nav-topics" href="/expertise.php">Expertise</a>
+      <a class="nav-topics active" href="/expertise.php">Expertise</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <!-- Hero Section -->
+<!-- Hero -->
 <section class="hero2">
-  <div class="hero-content2">
-    <h1>Open Vacatures</h1>
-    <p class="lead">Sluit je aan bij ons team!</p>
-    <div class="cta">
-      <a class="btn" href="/contact.php?apply=1">Solliciteer nu</a>
-      <a class="btn" href="#vacatures">Bekijk vacatures</a>
-    </div>
-  </div>
-  </section>
+  <div class="expertise-hero-content">
+    <h1>Onze expertise</h1>
+    <p>
+      PMB Amsterdam helpt projecten vooruit met structuur, overzicht en samenwerking.
+      Van projectstart tot oplevering — transparant en professioneel.
+    </p>
 
-  <div id="vacatures" class="vacatures-grid">
-      <div class="vacancy-card">
-        <span class="vacancy-label">FULL-TIME</span>
-        <h3>Senior Projectmanager</h3>
-        <div class="vacancy-meta">
-          <span><img src="/img/location.jpg" alt="Locatie" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> Amsterdam</span>
-          <span><img src="/img/euro.jpg" alt="€" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> €4.200 - €5.500</span>
-        </div>
-        <p>Leid complexe, multi-disciplinaire projecten met budgetten tot €5M. Jij hebt 5+ jaar ervaring en bent klaar voor een leidinggevende rol. Perfekt voor iemand die sterke organisatorische skills combineert met empathie.</p>
-        <div style="margin-top: 16px;">
-          <a class="btn-card" href="/contact.php?apply=1&job=Senior%20Projectmanager">Solliciteer</a>
-        </div>
-      </div>
-
-      <div class="vacancy-card">
-        <span class="vacancy-label">FULL-TIME</span>
-        <h3>Junior Projectmanager</h3>
-        <div class="vacancy-meta">
-          <span><img src="/img/location.jpg" alt="Locatie" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> Amsterdam</span>
-          <span><img src="/img/euro.jpg" alt="€" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> €2.400 - €3.200</span>
-        </div>
-        <p>Start je carrière onder begeleiding van senior staff. Je volgt projecten van begin tot einde, ondersteunt in planning en communicatie. Ideaal voor HBO-afgestudeerden met interesse in projectmanagement.</p>
-        <div style="margin-top: 16px;">
-          <a class="btn-card" href="/contact.php?apply=1&job=Junior%20Projectmanager">Solliciteer</a>
-        </div>
-      </div>
-
-      <div class="vacancy-card">
-        <span class="vacancy-label">FULL-TIME</span>
-        <h3>Planning & Scheduling Specialist</h3>
-        <div class="vacancy-meta">
-          <span><img src="/img/location.jpg" alt="Locatie" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> Amsterdam</span>
-          <span><img src="/img/euro.jpg" alt="€" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> €2.800 - €3.800</span>
-        </div>
-        <p>Creëer en beheer planning voor grote projecten. Je bent expert in tools als MS Project en Smartsheet. Logisch denken, detailgerichtheid en communicatieve skills zijn essentieel.</p>
-        <div style="margin-top: 16px;">
-          <a class="btn-card" href="/contact.php?apply=1&job=Planning%20%26%20Scheduling%20Specialist">Solliciteer</a>
-        </div>
-      </div>
-
-      <div class="vacancy-card">
-        <span class="vacancy-label">PART-TIME</span>
-        <h3>Junior Planner</h3>
-        <div class="vacancy-meta">
-          <span><img src="/img/location.jpg" alt="Locatie" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> Amsterdam</span>
-          <span><img src="/img/euro.jpg" alt="€" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> €2.000 - €2.600</span>
-        </div>
-        <p>Perfect voor studerenden of professionals die flexibel werken. Je ondersteunt in planning, data-invoer en rapportage. Minimaal 16 uur per week. Goede gelegenheid om ervaring op te doen.</p>
-        <div style="margin-top: 16px;">
-          <a class="btn-card" href="/contact.php?apply=1&job=Junior%20Planner">Solliciteer</a>
-        </div>
-      </div>
-
-      <div class="vacancy-card">
-        <span class="vacancy-label">FULL-TIME</span>
-        <h3>Projectmanagement Consultant</h3>
-        <div class="vacancy-meta">
-          <span><img src="/img/location.jpg" alt="Locatie" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> Amsterdam</span>
-          <span><img src="/img/euro.jpg" alt="€" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> €3.500 - €4.800</span>
-        </div>
-        <p>Adviseer klanten over projectmanagement-methodieken en best practices. Jij bent experienced in Scrum, Waterfall en Hybrid-methoden. Travel naar klanten: 30-40% van je tijd.</p>
-        <div style="margin-top: 16px;">
-          <a class="btn-card" href="/contact.php?apply=1&job=Projectmanagement%20Consultant">Solliciteer</a>
-        </div>
-      </div>
-
-      <div class="vacancy-card">
-        <span class="vacancy-label">FULL-TIME</span>
-        <h3>RPA & Automation Specialist</h3>
-        <div class="vacancy-meta">
-          <span><img src="/img/location.jpg" alt="Locatie" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> Amsterdam</span>
-          <span><img src="/img/euro.jpg" alt="€" style="width:16px;height:auto;vertical-align:middle;margin-right:6px;"> €3.200 - €4.400</span>
-        </div>
-        <p>Optimaliseer projectmanagement-processen via automatisering. Jij hebt ervaring met RPA-tools, Power Automate en process mining. Je helpt teams efficiënter te werken.</p>
-        <div style="margin-top: 16px;">
-          <a class="btn-card" href="/contact.php?apply=1&job=RPA%20%26%20Automation%20Specialist">Solliciteer</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Contact Section -->
-<section id="contact">
-  <div class="container" style="text-align: center;">
-    <h2>Klaar om mee te doen?</h2>
-    <p style="color: #666; font-size: 18px; max-width: 600px; margin: 20px auto;">Stuur ons je CV en motivatiebrief. Wij kijken ernaar uit om je te leren kennen!</p>
-    
-    <div class="cta" style="justify-content: center;">
-      <a class="btn" href="/contact.php?apply=1"><img src="/img/mail.jpg" alt="Mail" style="height:20px;margin-right:8px;vertical-align:middle;"> Solliciteer nu</a>
-      <a class="btn" href="tel:+31203030303"><img src="/img/call.jpg" alt="Call" style="height:20px;margin-right:8px;vertical-align:middle;"> Bel ons: +31 (0)20 303 0303</a>
-    </div>
-
-    <div style="margin-top: 40px; padding: 20px; background: var(--light-gray); border-radius: 10px;">
-      <p style="margin: 0 0 12px;"><strong>PMB Amsterdam</strong></p>
-      <p style="margin: 0; color: #666;">
-        <img src="/img/location.jpg" alt="Location" style="height:20px;margin-right:8px;vertical-align:middle;"> Weesperstraat 432 | 1018 DN Amsterdam<br>
-        <img src="/img/mail.jpg" alt="Mail" style="height:20px;margin-right:8px;vertical-align:middle;"> hr@pmb-amsterdam.nl<br>
-        <img src="/img/call.jpg" alt="Call" style="height:20px;margin-right:8px;vertical-align:middle;"> +31 (0)20 303 0303<br>
-        <img src="/img/red.jpg" alt="Call" style="height:20px;margin-right:8px;vertical-align:middle;"> www.pmb-amsterdam.nl
-      </p>
+    <div class="expertise-hero-actions">
+      <a class="btn" href="/contact.php">Neem contact op</a>
+      <a class="btn btn-outline" href="/projects.php">Bekijk projecten</a>
     </div>
   </div>
 </section>
-</main>
+
+<!-- Intro -->
+<section class="expertise-section">
+  <div class="container">
+    <div class="expertise-intro">
+      <div class="expertise-intro-text">
+        <h2>Waar we sterk in zijn</h2>
+        <p>
+          Wij brengen rust in complexe trajecten. Met heldere afspraken, sterke communicatie en een realistische
+          planning zorgen we dat stakeholders weten waar ze aan toe zijn.
+        </p>
+
+        <ul class="expertise-list">
+          <li>Doelen, scope en besluitvorming (governance)</li>
+          <li>Planning, capaciteit en budgetbewaking</li>
+          <li>Risico- & issuemanagement met duidelijke ownership</li>
+          <li>Stakeholdermanagement en communicatie</li>
+          <li>Oplevering, acceptatie en overdracht</li>
+        </ul>
+      </div>
+
+      <div class="expertise-stats">
+        <div class="stat-box">
+          <h3>Transparant</h3>
+          <p>Heldere rapportages en voortgang voor team én opdrachtgever.</p>
+        </div>
+        <div class="stat-box">
+          <h3>Praktisch</h3>
+          <p>Geen papierwerk om het papierwerk — we doen wat nodig is.</p>
+        </div>
+        <div class="stat-box">
+          <h3>Meetbaar</h3>
+          <p>Doelen, KPI’s en afspraken die je kunt volgen en bijsturen.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Expertises (cards) -->
+<section class="expertise-section expertise-section-alt">
+  <div class="container">
+    <h2>Expertisegebieden</h2>
+    <p class="muted">De onderdelen waar we het vaakst waarde toevoegen.</p>
+
+    <div class="expertise-grid">
+      <div class="expertise-card">
+        <h3>Projectmanagement</h3>
+        <p>Sturing op planning, budget, kwaliteit en oplevering. Met heldere afspraken en deadlines.</p>
+      </div>
+
+      <div class="expertise-card">
+        <h3>Programmamanagement</h3>
+        <p>Overzicht en regie over meerdere projecten: roadmap, afhankelijkheden en prioriteiten.</p>
+      </div>
+
+      <div class="expertise-card">
+        <h3>Portfoliosturing</h3>
+        <p>Keuzes maken met inzicht: waarde, risico’s, capaciteit en budget. Rapportage voor MT/Bestuur.</p>
+      </div>
+
+      <div class="expertise-card">
+        <h3>PMO & Projectcontrol</h3>
+        <p>Documentatie, planning, rapportages en governance op orde — zodat teams kunnen doorpakken.</p>
+      </div>
+
+      <div class="expertise-card">
+        <h3>Agile / Scrum begeleiding</h3>
+        <p>Teams begeleiden met focus op samenwerking, ritme en continu verbeteren (Scrum Master/coach).</p>
+      </div>
+
+      <div class="expertise-card">
+        <h3>Business analyse</h3>
+        <p>Van behoefte naar requirements: procesanalyse, user stories en acceptatiecriteria.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Aanpak (steps) -->
+<section class="expertise-section">
+  <div class="container">
+    <h2>Onze aanpak</h2>
+    <p class="muted">Kort, duidelijk en uitvoerbaar — zodat je snel resultaat ziet.</p>
+
+    <div class="expertise-steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-body">
+          <h3>Intake & projectscan</h3>
+          <p>Doelen, scope, stakeholders en risico’s in kaart. We bepalen wat succes betekent.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-body">
+          <h3>Plan & governance</h3>
+          <p>Projectplan, rollen, besluitmomenten en rapportage-afspraken. Eén manier van werken.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-body">
+          <h3>Uitvoering & sturing</h3>
+          <p>Voortgang bewaken, issues oplossen, stakeholders meenemen en bijsturen waar nodig.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-body">
+          <h3>Oplevering & borging</h3>
+          <p>Acceptatie, overdracht, evaluatie en verbeterpunten vastleggen voor het vervolg.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="expertise-cta">
+      <a class="btn" href="/werkenbij.php">Werken bij PMB</a>
+      <a class="btn btn-outline" href="/contact.php">Plan een gesprek</a>
+    </div>
+  </div>
+</section>
 
 <footer>
-  <div class="container">
-    <p>&copy; 2024 Project Management Bureau Amsterdam.</p>
+  <div class="footer-inner">
+    <p>&copy; 2024 Project Management Bureau Amsterdam. Alle rechten voorbehouden.</p>
+    <p>
+      <a href="#privacy">Privacybeleid</a> ·
+      <a href="#terms">Gebruiksvoorwaarden</a> ·
+      <a href="#cookies">Cookies</a>
+    </p>
   </div>
 </footer>
 
-
-<script>
-document.addEventListener('DOMContentLoaded', function(){
-  document.querySelectorAll('a[href="#vacatures"]').forEach(function(a){
-    a.addEventListener('click', function(e){
-      e.preventDefault();
-      var el = document.getElementById('vacatures');
-      if (!el) return;
-      var y = el.getBoundingClientRect().top + window.pageYOffset - 200;
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    });
-  });
-});
-</script>
 </body>
 </html>
-HTML;
-exit;

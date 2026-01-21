@@ -9,14 +9,8 @@ section {
   padding: 100px 0;
 }
 
-.hero2 {
-  background: linear-gradient(135deg,
-    #ff6b6b 0%,
-    #ff3b3b 20%,
-    var(--red) 45%,
-    #a00824 72%,
-    #6b0012 100%
-  );
+.expertise-hero-content {
+  background: linear-gradient(135deg, #c40000, #e60000);
   color: var(--white);
   padding: 200px 20px !important;
   text-align: center;

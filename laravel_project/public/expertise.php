@@ -1,28 +1,19 @@
 <?php
-
-use Illuminate\Foundation\Application;
-
-define('LARAVEL_START', microtime(true));
-
-// Determine if the application is in maintenance mode...
-if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
-    require $maintenance;
-}
-
-// Serve a lightweight static homepage for the root path to present a red/white modern careers page.
-// Always render this page when visited directly.
-echo <<<'HTML'
+// expertise.php
+?>
 <!doctype html>
 <html lang="nl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Expertise — PMB Amsterdam</title>
-<link rel="stylesheet" href="/css/expertise.css">
+  <meta charset="utf-8">
+  <title>PMB Amsterdam — Expertise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/expertise.css">
 </head>
+
 <body>
 
-<!-- Header -->
 <header>
   <div class="header-content">
     <img class="brand-logo" src="/img/logo-gemeente-amsterdam.jpg" alt="Gemeente Amsterdam Logo">
@@ -31,78 +22,157 @@ echo <<<'HTML'
       <a class="nav-topics" href="/werkenbij.php">Werken Bij</a>
       <a class="nav-topics" href="/contact.php">Contact</a>
       <a class="nav-topics" href="/projects.php">Opdrachten/Projecten</a>
-      <a class="nav-topics" href="/expertise.php">Expertise</a>
+      <a class="nav-topics nav-active" href="/expertise.php">Expertise</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <div class="team-container">
-    <div class="team-card">
-        <div class="team-photo">
-            <img src="images/sophie.jpg" alt="Sophie van Dijk">
+<!-- HERO -->
+<section class="exp-hero">
+  <div class="exp-hero-inner">
+    <h1>Expertise</h1>
+    <p>
+      We helpen projecten vooruit met structuur, 
+      overzicht en samenwerking.
+    </p>
+    <p>Kort, duidelijk en professioneel.</p>
+    <div class="exp-actions">
+      <a class="btn" href="/contact.php">Contact</a>
+      <a class="btn" href="/projects.php">Projecten</a>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE CARDS -->
+<section class="exp-section">
+  <div class="container">
+    <h2>Wat we doen</h2>
+    <p class="muted">De kern van onze dienstverlening.</p>
+
+    <div class="exp-grid">
+      <article class="exp-card">
+        <h3>Projectmanagement</h3>
+        <p>Planning, budget, kwaliteit en oplevering.</p>
+      </article>
+
+      <article class="exp-card">
+        <h3>Programmamanagement</h3>
+        <p>Regie over meerdere projecten en afhankelijkheden.</p>
+      </article>
+
+      <article class="exp-card">
+        <h3>Portfoliosturing</h3>
+        <p>Prioriteiten, waarde, risico’s en capaciteit.</p>
+      </article>
+
+      <article class="exp-card">
+        <h3>PMO / Projectcontrol</h3>
+        <p>Rapportages, besluitvorming en documentatie op orde.</p>
+      </article>
+
+      <article class="exp-card">
+        <h3>Agile / Scrum</h3>
+        <p>Teamflow, ritme, samenwerking en verbetering.</p>
+      </article>
+
+      <article class="exp-card">
+        <h3>Business Analyse</h3>
+        <p>Van behoefte naar requirements en acceptatiecriteria.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- AANPAK (kort) -->
+<section class="exp-section exp-alt">
+  <div class="container">
+    <h2>Onze aanpak</h2>
+    <div class="exp-steps">
+      <div class="exp-step">
+        <div class="exp-step-nr">1</div>
+        <div>
+          <h3>Intake</h3>
+          <p>Doelen, scope en stakeholders helder.</p>
         </div>
-        <div class="team-info">
-            <h2>Sophie van Dijk</h2>
-            <h3>Projectmanager</h3>
-            <p>Sophie zorgt dat elk project soepel en op tijd verloopt.</p>
+      </div>
+
+      <div class="exp-step">
+        <div class="exp-step-nr">2</div>
+        <div>
+          <h3>Sturing</h3>
+          <p>Planning, voortgang en transparante rapportage.</p>
         </div>
+      </div>
+
+      <div class="exp-step">
+        <div class="exp-step-nr">3</div>
+        <div>
+          <h3>Oplevering</h3>
+          <p>Acceptatie, overdracht en evaluatie.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM RIJ -->
+<section class="exp-section">
+  <div class="container">
+    <div class="exp-team-head">
+      <h2>Ons team</h2>
     </div>
 
-    <div class="team-card">
-        <div class="team-photo">
-            <img src="images/jeroen.jpg" alt="Jeroen Bakker">
-        </div>
+    <div class="exp-team-row">
+      <article class="team-card">
+       <img class="teamlid" src="/img/sjaak.jpg" alt="Sjaak">
         <div class="team-info">
-            <h2>Jeroen Bakker</h2>
-            <h3>Scrum Master</h3>
-            <p>Jeroen begeleidt teams naar maximale efficiëntie en samenwerking.</p>
+          <h3>Sjaak Huijsman</h3>
+          <p>Bouwmanager</p>
         </div>
+      </article>
+
+      <article class="team-card">
+      <img class="teamlid" src="/img/caroline.jpg" alt="Caroline">
+        <div class="team-info">
+          <h3>Caroline van Rhijn</h3>
+          <p>Planningadviseur</p>
+        </div>
+      </article>
+
+      <article class="team-card">
+        <img class="teamlid" src="/img/david.jpg" alt="David">
+        <div class="team-info">
+          <h3>David Brandwagt</h3>
+          <p>Senior Bouwmanager</p>
+        </div>
+</article>
+
+      <article class="team-card">
+        <img class="teamlid" src="/img/hester.jpg" alt="Hester">
+        <div class="team-info">
+          <h3>Hester Ombre</h3>
+          <p>Projectmanager</p>
+        </div>
+      </article>
     </div>
 
-    <div class="team-card">
-        <div class="team-photo">
-            <img src="images/anika.jpg" alt="Anika de Vries">
-        </div>
-        <div class="team-info">
-            <h2>Anika de Vries</h2>
-            <h3>Business Analyst</h3>
-            <p>Anika analyseert processen en adviseert strategische verbeteringen.</p>
-        </div>
+    <div class="exp-cta">
+      <a class="btn-team" href="/werkenbij.php">Werken bij</a>
+      <a class="btn-team btn-outline" href="/contact.php">Plan een gesprek</a>
     </div>
-
-    <div class="team-card">
-        <div class="team-photo">
-            <img src="images/tom.jpg" alt="Tom van Leeuwen">
-        </div>
-        <div class="team-info">
-            <h2>Tom van Leeuwen</h2>
-            <h3>Planner</h3>
-            <p>Tom zorgt dat alle deadlines overzichtelijk en haalbaar zijn.</p>
-        </div>
-    </div>
-
-    <div class="team-card">
-        <div class="team-photo">
-            <img src="images/lotte.jpg" alt="Lotte Janssen">
-        </div>
-        <div class="team-info">
-            <h2>Lotte Janssen</h2>
-            <h3>Client Relations</h3>
-            <p>Lotte onderhoudt de beste relaties met onze klanten.</p>
-        </div>
-    </div>
-</div>
-
-</main>
+  </div>
+</section>
 
 <footer>
-  <div class="container">
-    <p>&copy; 2024 Project Management Bureau Amsterdam.</p>
+  <div class="footer-inner">
+    <p>&copy; 2024 Project Management Bureau Amsterdam. Alle rechten voorbehouden.</p>
+    <p>
+      <a href="#privacy">Privacybeleid</a> ·
+      <a href="#terms">Gebruiksvoorwaarden</a> ·
+      <a href="#cookies">Cookies</a>
+    </p>
   </div>
 </footer>
 
 </body>
 </html>
-HTML;
-exit;

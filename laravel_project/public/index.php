@@ -8,19 +8,17 @@
 //  echo "AUTOLOAD OK";
 //   exit;
 
-use Illuminate\Foundation\Application;
+
 use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
 
-// Determine if the application is in maintenance mode...
-if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
-    require $maintenance;
-}
+require __DIR__.'/../vendor/autoload.php';
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
 $app->handleRequest(Request::capture());
+
 exit();
 
 // Serve a lightweight static homepage for the root path to present a red/white modern careers page.
@@ -35,7 +33,6 @@ if ($uri === '/' || $uri === '/index.php') {
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PMB Amsterdam — Project Management Bureau</title>
 <link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/werkenbij.css">
 <style>
   .photo-canvas{border:1px dashed #bbb;background:#f8f8f8;display:block;width:100%;max-width:420px;height:260px;margin:8px 0}
   .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
@@ -56,6 +53,8 @@ if ($uri === '/' || $uri === '/index.php') {
       <a class="nav-topics" href="/contact.php">Contact</a>
       <a class="nav-topics" href="/projects.php">Opdrachten/Projecten</a>
       <a class="nav-topics" href="/expertise.php">Expertise</a>
+      <a class="nav-topics" href="/projectmanagement.php">Projectmanagment</a>
+      <a class="nav-topics" href="/publicaties.php">Publicaties</a>
     </nav>
   </div>
 </header>
