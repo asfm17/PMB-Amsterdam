@@ -1,5 +1,4 @@
 <?php
-// publicaties.php
 ?>
 <!doctype html>
 <html lang="nl">
@@ -29,7 +28,6 @@
   </div>
 </header>
 
-<!-- HERO -->
 <section class="pub-hero">
   <div class="pub-hero-inner">
     <h1>Publicaties</h1>
@@ -45,7 +43,6 @@
   </div>
 </section>
 
-<!-- CONTENT -->
 <section class="pub-section">
   <div class="container">
     <div class="pub-head">
@@ -53,7 +50,7 @@
         <h2>Laatste publicaties</h2>
       </div>
 
-      <!-- Visuele filter (nog zonder JS) -->
+      
       <div class="pub-filters" aria-label="Filters">
         <span class="pub-pill pub-pill-active" data-filter="all">Alles</span>
         <span class="pub-pill" data-filter="Nieuws">Nieuws</span>
@@ -157,11 +154,10 @@
     pill.addEventListener('click', function() {
       const filterValue = this.getAttribute('data-filter');
       
-      // Update active pill
+      
       document.querySelectorAll('.pub-pill').forEach(p => p.classList.remove('pub-pill-active'));
       this.classList.add('pub-pill-active');
       
-      // Filter cards
       document.querySelectorAll('.pub-card').forEach(card => {
         const tagElement = card.querySelector('.pub-tag');
         const tagValue = tagElement ? tagElement.textContent : '';

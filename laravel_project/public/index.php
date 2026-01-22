@@ -1,13 +1,5 @@
 <?php
 
-//temp debug
-
-// ini_set('display_errors', 1);
-//  error_reporting(E_ALL);
-// require __DIR__.'/../vendor/autoload.php';
-//  echo "AUTOLOAD OK";
-//   exit;
-
 
 use Illuminate\Http\Request;
 
@@ -17,10 +9,9 @@ require __DIR__.'/../vendor/autoload.php';
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
-// Serve a lightweight static homepage for the root path to present a red/white modern careers page.
 $uri = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
 if ($uri === '/' || $uri === '/index.php') {
-    // Uitgebreide homepage met meer content-secties.
+    
     echo <<<'HTML'
 <!doctype html>
 <html lang="nl">
@@ -39,7 +30,6 @@ if ($uri === '/' || $uri === '/index.php') {
 </head>
 <body>
 
-<!-- Header -->
 <header>
   <div class="header-content">
     <img class="brand-logo" src="/img/logo-gemeente-amsterdam.jpg" alt="Gemeente Amsterdam Logo">
@@ -55,7 +45,6 @@ if ($uri === '/' || $uri === '/index.php') {
   </div>
 </header>
 
-<!-- Hero -->
 <section class="hero1">
   <div class="hero-strap">
     <h1>Word onderdeel van PMB Amsterdam</h1>
@@ -66,7 +55,6 @@ if ($uri === '/' || $uri === '/index.php') {
   </div>
 </section>
 
-<!-- Wat we doen -->
 <section class="section">
   <div class="container">
     <h2>Over ons</h2>
@@ -88,7 +76,6 @@ if ($uri === '/' || $uri === '/index.php') {
   </div>
 </section>
 
-<!-- Insert two photos side-by-side between sections -->
 <section class="section" style="padding:24px 16px; background:transparent">
   <div class="container photo-gallery">
     <img src="/img/bureau.jpg" alt="Bureau">
@@ -96,7 +83,6 @@ if ($uri === '/' || $uri === '/index.php') {
   </div> 
 </section>
 
-<!-- Projects / Impact -->
 <section class="section" style="background:#fbfbfb">
   <div class="container">
     <h2>Projecten & impact</h2>
@@ -131,7 +117,6 @@ if ($uri === '/' || $uri === '/index.php') {
   </div>
 </section>
 
-<!-- Footer -->
 <footer>
   <div style="max-width: 1100px; margin: 0 auto; padding:22px 0">
     <p>&copy; 2024 Project Management Bureau Amsterdam. Alle rechten voorbehouden.</p>
@@ -149,10 +134,8 @@ HTML;
     exit;
 }
 
-// Register the Composer autoloader...
 require __DIR__.'/../vendor/autoload.php';
 
-// Bootstrap Laravel and handle the request...
 /** @var Application $app */
 $app = require_once __DIR__.'/../bootstrap/app.php';
 

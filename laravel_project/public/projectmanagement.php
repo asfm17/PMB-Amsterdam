@@ -1,6 +1,5 @@
 
 <?php
-// projectmanagement.php
 ?>
 <!doctype html>
 <html lang="nl">
@@ -29,7 +28,6 @@
   </div>
 </header>
 
-<!-- HERO -->
 <section class="pm-hero">
   <div class="pm-hero-inner">
     <h1>Projectmanagement</h1>
@@ -45,7 +43,6 @@
   </div>
 </section>
 
-<!-- WAT IS HET -->
 <section class="pm-section">
   <div class="container">
     <div class="pm-two-col">
@@ -83,7 +80,6 @@
   </div>
 </section>
 
-<!-- ONZE ROL -->
 <section class="pm-section pm-alt">
   <div class="container">
     <h2>Onze rol in het project</h2>
@@ -111,7 +107,6 @@
   </div>
 </section>
 
-<!-- HOE WE WERKEN -->
 <section class="pm-section">
   <div class="container">
     <h2>Hoe we werken</h2>
@@ -162,7 +157,6 @@
   </div>
 </section>
 
-<!-- CTA -->
 <section class="pm-section pm-cta">
   <div class="container pm-cta-inner">
     <h2>Klaar voor meer grip op je project?</h2>

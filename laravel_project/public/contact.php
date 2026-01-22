@@ -4,13 +4,10 @@ use Illuminate\Foundation\Application;
 
 define('LARAVEL_START', microtime(true));
 
-// Determine if the application is in maintenance mode...
 if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
     require $maintenance;
 }
 
-// Serve a lightweight static homepage for the root path to present a red/white modern careers page.
-// Always render this page when visited directly.
 echo <<<'HTML'
 <!doctype html>
 <html lang="nl">
@@ -23,7 +20,6 @@ echo <<<'HTML'
 </head>
 <body>
 
-<!-- Header -->
 <header>
   <div class="header-content">
     <img class="brand-logo" src="/img/logo-gemeente-amsterdam.jpg" alt="Gemeente Amsterdam Logo">
@@ -77,7 +73,6 @@ echo <<<'HTML'
           <button class="form-tab" onclick="switchForm('apply', event)">Sollicitatie</button>
         </div>
 
-        <!-- Contact Form Section -->
         <div id="contact-section" class="form-section active">
           <h2>Stuur ons een bericht</h2>
           <form method="POST" action="/contact.php">
@@ -105,7 +100,6 @@ echo <<<'HTML'
           </form>
         </div>
 
-        <!-- Sollicitatie Form Section -->
         <div id="apply-section" class="form-section">
           <h2>Solliciteer nu</h2>
           <form method="POST" action="/contact.php">
@@ -154,31 +148,25 @@ echo <<<'HTML'
 function switchForm(formType, event) {
   if (event) event.preventDefault();
   
-  // Hide all sections
   document.getElementById('contact-section').classList.remove('active');
   document.getElementById('apply-section').classList.remove('active');
   
-  // Remove active class from all tabs
   document.querySelectorAll('.form-tab').forEach(tab => {
     tab.classList.remove('active');
   });
   
-  // Show selected section
   if (formType === 'contact') {
     document.getElementById('contact-section').classList.add('active');
-    // Focus on message field in contact form
     setTimeout(() => {
       document.getElementById('message').focus();
     }, 100);
   } else if (formType === 'apply') {
     document.getElementById('apply-section').classList.add('active');
-    // Focus on name field in apply form
     setTimeout(() => {
       document.getElementById('apply-name').focus();
     }, 100);
   }
   
-  // Set active tab
   document.querySelectorAll('.form-tab').forEach((tab, index) => {
     if ((formType === 'contact' && index === 0) || (formType === 'apply' && index === 1)) {
       tab.classList.add('active');
@@ -186,27 +174,22 @@ function switchForm(formType, event) {
   });
 }
 
-// Check URL parameter on page load
 document.addEventListener('DOMContentLoaded', function() {
   const urlParams = new URLSearchParams(window.location.search);
   const isApply = urlParams.get('apply');
   const jobTitle = urlParams.get('job');
   
   if (isApply === '1') {
-    // Switch to apply form
     switchForm('apply');
     
-    // Pre-fill job title if provided
     if (jobTitle) {
       document.getElementById('apply-position').value = decodeURIComponent(jobTitle);
     }
-    
-    // Focus on name field
+  
     setTimeout(() => {
       document.getElementById('apply-name').focus();
     }, 150);
     
-    // Scroll down 150px
     setTimeout(() => {
       window.scrollBy({ top: 150, behavior: 'smooth' });
     }, 200);

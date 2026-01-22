@@ -1,5 +1,4 @@
 <?php
-// projects.php
 ?>
 <!doctype html>
 <html lang="nl">
@@ -7,16 +6,11 @@
     <meta charset="utf-8">
     <title>Projecten — PMB Amsterdam</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bestaande styles -->
     <link rel="stylesheet" href="/css/style.css">
-
-    <!-- Nieuwe project-specifieke CSS -->
     <link rel="stylesheet" href="/css/projects.css">
 </head>
 <body>
 
-<!-- Header -->
 <header>
     <div class="header-content">
         <img class="brand-logo" src="/img/logo-gemeente-amsterdam.jpg" alt="Gemeente Amsterdam Logo">
@@ -32,7 +26,6 @@
     </div>
 </header>
 
-<!-- Hero -->
 <section class="projects-hero">
     <div class="projects-hero-content">
         <h1>Onze projecten</h1>
@@ -40,7 +33,6 @@
     </div>
 </section>
 
-<!-- Project overzicht -->
 <section class="projects-section">
     <div class="container">
         <h2>Geselecteerde projecten</h2>
@@ -107,7 +99,6 @@
     </div>
 </section>
 
-<!-- Call to action -->
 <section class="projects-cta">
     <div class="container">
         <h2>Meewerken aan deze projecten?</h2>
@@ -116,7 +107,6 @@
     </div>
 </section>
 
-<!-- Footer -->
 <footer>
     <div class="footer-inner">
         <p>&copy; 2024 Project Management Bureau Amsterdam. Alle rechten voorbehouden.</p>

@@ -1,4 +1,4 @@
-/* Werken Bij - Vacatures Section */
+
 .container {
   max-width: 1024px;
   margin: 0 auto;
@@ -124,23 +124,22 @@ section {
 
 .vacatures-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* keep original card sizing */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
   margin: 40px auto 0;
-  max-width: 948px; /* 3 * 300px + 2 * 24px gap = 948px -> centers and limits to 3 columns */
+  max-width: 948px;
   width: 100%;
 }
 
-/* Responsive adjustments: let auto-fit handle smaller widths, keep explicit safe breakpoints */
 @media (max-width: 980px) {
   .vacatures-grid {
-    max-width: 640px; /* 2 columns fit nicely */
+    max-width: 640px; 
   }
 }
 
 @media (max-width: 700px) {
   .vacatures-grid {
-    max-width: 360px; /* single column */
+    max-width: 360px;
     grid-template-columns: 1fr;
   }
 }
@@ -229,7 +228,6 @@ section {
   text-decoration: none;
 }
 
-/* Team Section */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -278,7 +276,6 @@ section {
   font-size: 14px;
 }
 
-/* Testimonials Section */
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -321,7 +318,6 @@ section {
   color: #8a8a8a;
 }
 
-/* FAQ Section */
 .faq-section {
   background: var(--light-gray);
 }
@@ -362,7 +358,6 @@ section {
   transform: translateY(-6px);
 }
 
-/* Small decorative separators */
 .section-divider {
   height: 6px;
   width: 76px;
@@ -371,7 +366,6 @@ section {
   margin: 18px 0;
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .faq-grid {
     grid-template-columns: 1fr;
@@ -403,23 +397,20 @@ section {
   .vacatures-hero .actions .btn { flex: 1; justify-content: center; }
 }
 
-/* Accessibility - focus states */
 :focus {
   outline: 4px solid rgba(183,13,40,0.18);
   outline-offset: 3px;
 }
 
-/* --- Intensified red tokens & page tint --- */
 :root {
-  --red: #b70d28;               /* deeper red */
+  --red: #b70d28;               
   --red-strong: rgba(183,13,40,0.96);
-  --muted-red: rgba(183,13,40,0.14); /* stronger background tint */
+  --muted-red: rgba(183,13,40,0.14); 
   --card-gradient: linear-gradient(135deg, rgba(183,13,40,0.06), rgba(255,255,255,0));
   --accent-border: rgba(183,13,40,0.18);
-  --bg-cream: #fff3f4;          /* warmer, more rosy */
+  --bg-cream: #fff3f4;
 }
 
-/* make the page background redder and warmer */
 body {
   background: radial-gradient(circle at 8% 10%, var(--muted-red), transparent 22%), var(--bg-cream);
   color: #222;
@@ -429,7 +420,6 @@ body {
   line-height: 1.5;
 }
 
-/* Links and small accents */
 a, a:visited {
   color: var(--red);
   text-decoration: none;
@@ -440,7 +430,6 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
-/* Vacatures hero - red background, large white text and two buttons */
 .vacatures-hero {
   color: #fff;
   padding: 48px 28px;
@@ -453,7 +442,6 @@ a:hover, a:focus {
   margin-bottom: 32px;
 }
 
-/* content area inside hero (title + subtitle) */
 .vacatures-hero .content {
   max-width: 72%;
 }
@@ -474,14 +462,12 @@ a:hover, a:focus {
   color: #fff;
 }
 
-/* action buttons container */
 .vacatures-hero .actions {
   display: flex;
   gap: 12px;
   align-items: center;
 }
 
-/* generic button base for hero */
 .vacatures-hero .btn {
   display: inline-flex;
   align-items: center;
@@ -495,7 +481,6 @@ a:hover, a:focus {
   border: 1px solid transparent;
 }
 
-/* primary: white-filled button with red text */
 .vacatures-hero .btn--primary {
   background: #fff;
   color: var(--red);
@@ -507,7 +492,6 @@ a:hover, a:focus {
   box-shadow: 0 22px 50px rgba(0,0,0,0.12);
 }
 
-/* ghost: transparent with white outline and white text */
 .vacatures-hero .btn--ghost {
   background: transparent;
   color: #fff;
@@ -516,4 +500,336 @@ a:hover, a:focus {
 .vacatures-hero .btn--ghost:hover,
 .vacatures-hero .btn--ghost:focus {
   background: rgba(255,255,255,0.06);
+}
+
+@media (max-width: 1024px) {
+  header .header-content {
+    gap: 50px;
+  }
+
+  .vacatures-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .testimonial-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  header {
+    padding: 12px 16px;
+  }
+
+  header .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  header .brand-logo {
+    height: 60px;
+  }
+
+  header nav {
+    width: 100%;
+    gap: 8px;
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  section {
+    padding: 50px 16px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin: 0 0 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin: 0 0 16px;
+  }
+
+  .werken-hero {
+    padding: 40px 16px !important;
+  }
+
+  .vacatures-grid {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .vacancy-card {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .vacancy-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .vacancy-meta {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .vacancy-meta span {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+
+  .btn-card {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+  }
+
+  .team-member {
+    padding: 20px;
+  }
+
+  .team-member-avatar {
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    margin: 0 auto 12px;
+  }
+
+  .team-member h3 {
+    font-size: 0.95rem;
+  }
+
+  .team-member p {
+    font-size: 12px;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .testimonial {
+    padding: 20px;
+    border-left: 5px solid var(--red);
+  }
+
+  .testimonial-text {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .testimonial-author {
+    font-size: 14px;
+  }
+
+  .testimonial-role {
+    font-size: 12px;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .faq-item {
+    padding: 18px;
+    border-radius: 8px;
+  }
+
+  .faq-question {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .section-divider {
+    width: 60px;
+    height: 4px;
+  }
+
+  .vacatures-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 16px;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .vacatures-hero .content {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .vacatures-hero .title {
+    font-size: clamp(1.3rem, 3vw, 2rem);
+  }
+
+  .vacatures-hero .lead {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+  }
+
+  .vacatures-hero .actions {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .vacatures-hero .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px 12px;
+  }
+
+  header .brand-logo {
+    height: 50px;
+  }
+
+  header nav {
+    gap: 6px;
+    font-size: 11px;
+  }
+
+  header nav a {
+    padding: 6px 10px;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  section {
+    padding: 40px 12px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .werken-hero {
+    padding: 30px 12px !important;
+  }
+
+  .vacatures-grid {
+    gap: 12px;
+  }
+
+  .vacancy-card {
+    padding: 16px;
+  }
+
+  .vacancy-card h3 {
+    font-size: 1rem;
+  }
+
+  .vacancy-label {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+
+  .vacancy-meta {
+    gap: 6px;
+    font-size: 12px;
+  }
+
+  .btn-card {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .team-member {
+    padding: 16px;
+  }
+
+  .team-member-avatar {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+  }
+
+  .testimonial-grid {
+    gap: 12px;
+  }
+
+  .testimonial {
+    padding: 16px;
+    border-left: 4px solid var(--red);
+  }
+
+  .testimonial-text {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .faq-item {
+    padding: 14px;
+  }
+
+  .faq-question {
+    font-size: 14px;
+  }
+
+  .vacatures-hero {
+    padding: 24px 12px;
+  }
+
+  .vacatures-hero .title {
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  }
+
+  .vacatures-hero .lead {
+    font-size: clamp(0.8rem, 1.8vw, 0.9rem);
+  }
+
+  .vacatures-hero .btn {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
 }

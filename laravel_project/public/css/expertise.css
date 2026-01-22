@@ -1,4 +1,3 @@
-/* expertise.css (kort & overzichtelijk) */
 
 .nav-topics.nav-active,
 .nav-topics.active {
@@ -6,7 +5,6 @@
   border-bottom-color: var(--red);
 }
 
-/* HERO */
 .exp-hero {
   background: linear-gradient(135deg, #c40000, #e60000);
   color: #fff;
@@ -50,7 +48,6 @@
   transition: background 0.3s;
 }
 
-/* SECTIONS */
 .exp-section {
   padding: 56px 0;
 }
@@ -59,7 +56,6 @@
   background: #f7f7f7;
 }
 
-/* EXPERTISE GRID */
 .exp-grid {
   margin-top: 16px;
   display: grid;
@@ -85,7 +81,6 @@
   line-height: 1.7;
 }
 
-/* STEPS (3) */
 .exp-steps {
   margin-top: 16px;
   display: grid;
@@ -126,7 +121,6 @@
   line-height: 1.7;
 }
 
-/* TEAM */
 .exp-team-head {
   display: flex;
   align-items: baseline;
@@ -158,7 +152,6 @@
 .teamlid 
 { width:100%; height:140px; object-fit:cover; display:block; }
 
-/* later: vervang .team-photo door een <img> of zet background-image */
 .team-info {
   padding: 14px;
 }
@@ -173,7 +166,7 @@
   color: #333;
 }
 
-/* CTA */
+
 .exp-cta {
   margin-top: 22px;
   display: flex;
@@ -181,7 +174,6 @@
   flex-wrap: wrap;
 }
 
-/* Footer helper (als je footer op andere pagina’s ook zo is) */
 .footer-inner {
   max-width: 1100px;
   margin: 0 auto;
@@ -190,7 +182,6 @@
   font-size: 14px;
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .exp-hero h1 {
     font-size: 32px;
@@ -210,5 +201,230 @@
 
   .team-photo {
     height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .exp-hero {
+    padding: 50px 16px;
+  }
+
+  .exp-hero-inner {
+    max-width: 100%;
+  }
+
+  .exp-hero h1 {
+    font-size: 26px;
+    margin: 0 0 10px;
+  }
+
+  .exp-hero p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .exp-actions {
+    margin-top: 16px;
+    gap: 10px;
+  }
+
+  .btn-team {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .exp-section {
+    padding: 40px 16px;
+  }
+
+  .exp-grid {
+    margin-top: 16px;
+    gap: 12px;
+  }
+
+  .exp-card {
+    padding: 14px;
+    border-radius: 10px;
+  }
+
+  .exp-card h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .exp-card p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .exp-steps {
+    margin-top: 16px;
+    gap: 12px;
+  }
+
+  .exp-step {
+    grid-template-columns: 40px 1fr;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .exp-step-nr {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .exp-step h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .exp-step p {
+    font-size: 13px;
+  }
+
+  .exp-team-head {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .exp-team-head h2 {
+    font-size: 22px;
+  }
+
+  .exp-team-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .team-card {
+    border-radius: 10px;
+  }
+
+  .team-photo {
+    height: 120px;
+  }
+
+  .team-info {
+    padding: 12px;
+  }
+
+  .team-info h3 {
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+
+  .team-info p {
+    font-size: 12px;
+  }
+
+  .exp-cta {
+    margin-top: 18px;
+    gap: 10px;
+  }
+
+  .footer-inner {
+    padding: 18px 16px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .exp-hero {
+    padding: 40px 12px;
+  }
+
+  .exp-hero h1 {
+    font-size: 22px;
+  }
+
+  .exp-hero p {
+    font-size: 14px;
+  }
+
+  .exp-actions {
+    flex-direction: column;
+  }
+
+  .btn-team {
+    width: 100%;
+    text-align: center;
+    padding: 12px 16px;
+  }
+
+  .exp-section {
+    padding: 30px 12px;
+  }
+
+  .exp-grid {
+    gap: 10px;
+  }
+
+  .exp-card {
+    padding: 12px;
+  }
+
+  .exp-card h3 {
+    font-size: 15px;
+  }
+
+  .exp-card p {
+    font-size: 12px;
+  }
+
+  .exp-steps {
+    gap: 10px;
+  }
+
+  .exp-step {
+    grid-template-columns: 36px 1fr;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .exp-step-nr {
+    width: 36px;
+    height: 36px;
+    font-size: 13px;
+  }
+
+  .exp-step h3 {
+    font-size: 14px;
+  }
+
+  .exp-step p {
+    font-size: 12px;
+  }
+
+  .exp-team-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .team-photo {
+    height: 200px;
+  }
+
+  .team-info {
+    padding: 10px;
+  }
+
+  .team-info h3 {
+    font-size: 14px;
+  }
+
+  .team-info p {
+    font-size: 11px;
+  }
+
+  .exp-cta {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-inner {
+    padding: 14px 12px;
+    font-size: 11px;
   }
 }

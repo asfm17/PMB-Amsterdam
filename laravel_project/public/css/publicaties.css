@@ -1,10 +1,8 @@
-/* publicaties.css */
 
 .nav-topics.nav-active{
   color: var(--red);
 }
 
-/* HERO */
 .pub-hero{
   background: linear-gradient(135deg, #c40000, #e60000);
   color: var(--white);
@@ -37,7 +35,6 @@
   flex-wrap: wrap;
 }
 
-/* Outline button (hero) */
 .btn.btn-outline{
   background: transparent;
   border: 2px solid rgba(255,255,255,0.9);
@@ -49,7 +46,6 @@
   transform: translateY(-1px);
 }
 
-/* Section */
 .pub-section{
   padding: 56px 0;
 }
@@ -58,7 +54,6 @@
   color: #666;
 }
 
-/* Header row + filters */
 .pub-head{
   display: flex;
   align-items: flex-end;
@@ -93,7 +88,6 @@
   background:#838383;
 }
 
-/* Grid */
 .pub-grid{
   margin-top: 12px;
   display: grid;
@@ -123,7 +117,6 @@
   line-height: 1.7;
 }
 
-/* Meta */
 .pub-meta{
   display: flex;
   align-items: center;
@@ -154,7 +147,6 @@
   text-decoration: underline;
 }
 
-/* CTA box */
 .pub-cta{
   margin-top: 28px;
 }
@@ -182,7 +174,6 @@
   transform: translateY(-1px);
 }
 
-/* Responsive */
 @media (max-width: 900px){
   .pub-grid{
     grid-template-columns: 1fr;
@@ -190,5 +181,167 @@
 
   .pub-hero h1{
     font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pub-hero {
+    padding: 50px 16px;
+  }
+
+  .pub-hero-inner {
+    max-width: 100%;
+  }
+
+  .pub-hero h1 {
+    font-size: 26px;
+    margin: 0 0 10px;
+  }
+
+  .pub-hero p {
+    font-size: 16px;
+  }
+
+  .pub-actions {
+    margin-top: 14px;
+    gap: 10px;
+  }
+
+  .pub-section {
+    padding: 40px 16px;
+  }
+
+  .pub-head {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .pub-filters {
+    gap: 8px;
+  }
+
+  .pub-pill {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .pub-grid {
+    margin-top: 12px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .pub-card {
+    padding: 14px;
+    gap: 8px;
+  }
+
+  .pub-card h3 {
+    font-size: 16px;
+  }
+
+  .pub-card p {
+    font-size: 13px;
+  }
+
+  .pub-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .pub-tag {
+    font-size: 11px;
+  }
+
+  .pub-date {
+    font-size: 11px;
+  }
+
+  .pub-cta {
+    margin-top: 20px;
+  }
+
+  .pub-cta-box {
+    padding: 14px;
+    border-radius: 10px;
+  }
+
+  .btn.btn-outline,
+  .btn.btn-outline-dark {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pub-hero {
+    padding: 40px 12px;
+  }
+
+  .pub-hero h1 {
+    font-size: 22px;
+  }
+
+  .pub-hero p {
+    font-size: 14px;
+  }
+
+  .pub-actions {
+    flex-direction: column;
+  }
+
+  .btn.btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pub-section {
+    padding: 30px 12px;
+  }
+
+  .pub-head {
+    gap: 10px;
+  }
+
+  .pub-filters {
+    gap: 6px;
+  }
+
+  .pub-pill {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+
+  .pub-grid {
+    gap: 10px;
+  }
+
+  .pub-card {
+    padding: 12px;
+  }
+
+  .pub-card h3 {
+    font-size: 15px;
+  }
+
+  .pub-card p {
+    font-size: 12px;
+  }
+
+  .pub-cta {
+    margin-top: 16px;
+  }
+
+  .pub-cta-box {
+    padding: 12px;
+  }
+
+  .btn.btn-outline-dark {
+    width: 100%;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 13px;
   }
 }

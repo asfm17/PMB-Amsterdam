@@ -1,5 +1,4 @@
 <?php
-// expertise.php
 ?>
 <!doctype html>
 <html lang="nl">
@@ -29,7 +28,6 @@
   </div>
 </header>
 
-<!-- HERO -->
 <section class="exp-hero">
   <div class="exp-hero-inner">
     <h1>Expertise</h1>
@@ -45,7 +43,6 @@
   </div>
 </section>
 
-<!-- EXPERTISE CARDS -->
 <section class="exp-section">
   <div class="container">
     <h2>Wat we doen</h2>
@@ -85,7 +82,6 @@
   </div>
 </section>
 
-<!-- AANPAK (kort) -->
 <section class="exp-section exp-alt">
   <div class="container">
     <h2>Onze aanpak</h2>
@@ -117,7 +113,6 @@
   </div>
 </section>
 
-<!-- TEAM RIJ -->
 <section class="exp-section">
   <div class="container">
     <div class="exp-team-head">

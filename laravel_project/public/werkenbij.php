@@ -1,5 +1,4 @@
 <?php
-// werkenbij.php
 ?>
 <!doctype html>
 <html lang="nl">
@@ -13,13 +12,12 @@
 
 <body>
 
-<!-- Header -->
 <header>
   <div class="header-content">
     <img class="brand-logo" src="/img/logo-gemeente-amsterdam.jpg" alt="Gemeente Amsterdam Logo">
     <nav>
       <a class="nav-topics" href="/">Home</a>
-      <a class="nav-topics" href="/werkenbij.php">Werken&nbsp;Bij</a>
+      <a class="nav-topics" href="/werkenbij.php">Werken</a>
       <a class="nav-topics" href="/contact.php">Contact</a>
       <a class="nav-topics" href="/projects.php">Opdrachten/Projecten</a>
       <a class="nav-topics" href="/expertise.php">Expertise</a>
@@ -29,7 +27,6 @@
   </div>
 </header>
 
-<!-- Hero Banner -->
 <section class="hero1">
   <div class="hero-strap">
     <h1>Werken bij PMB Amsterdam</h1>
@@ -41,7 +38,6 @@
   </div>
 </section>
 
-<!-- Intro Section -->
 <section class="section">
   <div class="container">
     <h2>Waarom bij PMB?</h2>
@@ -63,7 +59,6 @@
   </div>
 </section>
 
-<!-- Vacancies Section -->
 <section id="vacancies" class="section" style="background: #fbfbfb;">
   <div class="container">
     <h2>Openstaande vacatures</h2>
@@ -109,38 +104,6 @@
   </div>
 </section>
 
-<!-- Team Section -->
-<section class="section">
-  <div class="container">
-    <h2>Ons team</h2>
-    <p style="color: #666; margin-bottom: 40px;">Maak kennis met de mensen achter PMB Amsterdam.</p>
-    
-    <div class="team-grid">
-      <div class="team-member">
-        <div class="team-member-avatar">JvD</div>
-        <h3>Jan van Dijk</h3>
-        <p>Senior Projectmanager & Founder</p>
-      </div>
-      <div class="team-member">
-        <div class="team-member-avatar">MG</div>
-        <h3>Maria García</h3>
-        <p>Projectmanager & Scrum Master</p>
-      </div>
-      <div class="team-member">
-        <div class="team-member-avatar">PJ</div>
-        <h3>Peter Jansen</h3>
-        <p>PMO & Programmamanager</p>
-      </div>
-      <div class="team-member">
-        <div class="team-member-avatar">SdV</div>
-        <h3>Sophie de Vries</h3>
-        <p>Business Analyst & Consultant</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Testimonials Section -->
 <section class="section" style="background: #fbfbfb;">
   <div class="container">
     <h2>Wat onze klanten zeggen</h2>
@@ -164,7 +127,6 @@
   </div>
 </section>
 
-<!-- FAQ Section -->
 <section class="faq-section">
   <div class="container">
     <h2>Veelgestelde vragen</h2>
@@ -197,7 +159,6 @@
   </div>
 </section>
 
-<!-- CTA Section -->
 <section id="contact-form" class="section">
   <div class="container" style="text-align: center;">
     <h2>Klaar om je aan te sluiten?</h2>
@@ -209,7 +170,6 @@
   </div>
 </section>
 
-<!-- Footer -->
 <footer>
   <div style="max-width: 1100px; margin: 0 auto; padding: 22px 0;">
     <p>&copy; 2024 Project Management Bureau Amsterdam. Alle rechten voorbehouden.</p>
